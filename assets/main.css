@@ -469,13 +469,6 @@
 .Megamenu--default .Megamenu-item > a.is-current {
   border-bottom: 2px solid #06c !important; }
 
-/** Carousel
-  ================ */
-.owl-stage,
-.owl-item {
-  display: flex;
-  align-self: stretch; }
-
 /** Utilities
   ================ */
 .u-letterSpace-l {
@@ -664,6 +657,7 @@
 @media screen and (min-width: 992px) {
   .HomeBlk1-plane img {
     height: 450px;
+    width: 550px;
     margin-left: -2em;
     vertical-align: top; } }
 @media screen and (max-width: 991px) {
@@ -804,17 +798,11 @@
       margin-right: 10px; } }
   .section__designkit__grid .Grid {
     position: relative; }
-  .section__designkit__grid .Grid > .Grid-cell:nth-child(5n):after {
-    content: '';
-    width: 100%;
+  .section__designkit__grid .sdkit__hr {
+    border-bottom: 1px solid #eee;
+    color: #eee;
     height: 1px;
-    border-bottom: .1rem solid #ddd;
-    position: absolute;
-    left: 0;
-    right: 0; }
-    @media screen and (max-width: 991px) {
-      .section__designkit__grid .Grid > .Grid-cell:nth-child(5n):after {
-        display: none !important; } }
+    opacity: 0.3; }
   .section__designkit__grid .Grid > .Grid-cell:nth-child(5):after {
     display: none; }
   @media screen and (max-width: 991px) {
@@ -1013,11 +1001,13 @@
   .sdkit__mainhead a {
     color: #5a6772 !important; } }
 .HomeBlk4 {
-  background: url(../assets/images/blk4/background.svg);
-  background-size: cover;
-  min-height: 200px; }
+  background-position: 0px 0px;
+  background-image: url(../assets/images/blk4/background.svg);
+  background-repeat: no-repeat;
+  background-size: cover; }
   .HomeBlk4 img {
-    height: 400px; }
+    height: 400px;
+    width: 400px; }
     @media screen and (max-width: 991px) {
       .HomeBlk4 img {
         margin-bottom: -4em;
